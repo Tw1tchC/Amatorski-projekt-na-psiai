@@ -83,8 +83,11 @@ html{
     text-align: center;
     list-style-type: none;
     background-color: #64c500;
+    background-image: url(IMG/burger.png);
+    background-repeat: no-repeat;
     height: 450px;
     margin-top: 5px;
+    background-position: center;
 }
 .menu4 > li{
 	display: inline-block;
@@ -116,4 +119,26 @@ html{
     display: inline-block;
     padding: 10px;
     background-color: #d1cdb3;
+}
+#topnav2{
+	background-color: #fffbdb;
+	text-align: center;
+}
+
+.menu6{
+	list-style-type: none;
+	margin: 0;
+	padding: 10px;
+	font-size: 18px;
+	min-height: 38px;
+	line-height: 200%;
+}
+
+.menu6 > li{
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+h1{
+    text-align: center;
 }
