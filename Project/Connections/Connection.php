@@ -3,7 +3,7 @@
 $host = "localhost"; 
 $user = "root";
 $password = ""; 
-$dbname = "hungryhub"; // chyba taka nazwa będzie wygodna jak nie to ją zmień ;D
+$dbname = "hungryhub";
 // Tworzyć połącznie
 $conn = new mysqli($host, $user, $password, $dbname);
 
