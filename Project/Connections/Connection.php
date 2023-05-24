@@ -3,14 +3,14 @@
 $host = "localhost"; 
 $user = "root";
 $password = ""; 
-$dbname = "HH_Project"; // chyba taka nazwa będzie wygodna jak nie to ją zmień ;D
+$dbname = "hungryhub"; // chyba taka nazwa będzie wygodna jak nie to ją zmień ;D
 // Tworzyć połącznie
 $conn = new mysqli($host, $user, $password, $dbname);
 
-// Sprawdzać połączenie
+// Sprawdzanie połączenia
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    die("Błąd połączenia: " . $conn->connect_error);
 }
 
-echo "Connected successfully";
+echo "Połączonie zakończyło sie powodzeniem";
 ?>
