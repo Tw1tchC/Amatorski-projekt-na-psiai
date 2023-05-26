@@ -1,0 +1,159 @@
+html{
+    background-color: #212121;
+    font-family: Verdana;
+}
+.img1{
+    width: 150px;
+    height: auto;
+    background-color: #212121;
+}
+.img2{
+    width: 75px;
+    height: auto;
+}
+.img3{
+    width: 125px;
+    height: auto;
+}
+.img4{
+    width: 125px;
+    height: auto;
+}
+.img5{
+    width: 90px;
+    height: auto;
+    padding: 5px;
+}
+#topnav{
+	background-color: #64c500;
+	text-align: center;
+}
+
+.menu{
+	list-style-type: none;
+	margin: 0;
+	padding: 10px;
+	font-size: 18px;
+	min-height: 38px;
+	line-height: 200%;
+}
+
+.menu > li{
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-right: 1px dashed #212121;
+}
+
+.menu > li:first-child{
+	border-left: 1px dashed #212121;
+}
+
+.menu a{
+	color: #212121;
+	text-decoration: none;
+}
+
+.menu a:hover{
+	color: #fffbdb;
+}
+.menu2{
+    text-align: center;
+    list-style-type: none;
+}
+#Mc{
+    float: left;
+    padding: 15px;
+}
+#KFC{
+    float: left;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+#BK{
+    float: left;
+    padding: 15px;
+}
+#Pasibus{
+    float: left;
+    padding: 15px;
+}
+#Pizza{
+    float: left;
+    padding: 15px;
+}
+#res{
+    display: inline-block;
+}
+.menu3{
+    text-align: center;
+    list-style-type: none;
+    background-color: #212121;
+    background-image: url(../IMG/burger.png);
+    background-repeat: no-repeat;
+    height: 450px;
+    margin-top: 5px;
+    background-position: center;
+    color: #fffbdb;
+}
+.menu4 > li{
+	display: inline-block;
+	padding-left: 40px;
+	padding-right: 40px;
+    background-color: #212121;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+#n1{
+    padding-top: 200px;
+    color: #fffbdb;
+}
+#n2{
+    color: #fffbdb;
+}
+.menu4 > li:hover{
+    background-color: #313131;
+}
+#n1 :hover{
+    color: #212121;
+}
+.menu5{
+    text-align: center;
+    background-color: #313131;
+    margin-bottom: 1px;
+    color: #fffbdb;
+}
+.menu5 > li{
+    text-align: center;
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+    background-color: #313131;
+}
+#topnav2{
+	background-color: #212121;
+	text-align: center;
+    color: #fffbdb;
+}
+
+.menu6{
+	list-style-type: none;
+	margin: 0;
+	padding: 10px;
+	font-size: 18px;
+	min-height: 38px;
+	line-height: 200%;
+}
+
+.menu6 > li{
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+h1{
+    text-align: center;
+}
