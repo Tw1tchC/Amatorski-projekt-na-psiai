@@ -1,0 +1,62 @@
+html{
+    background-color: #fffbdb;
+    font-family: Verdana;
+}
+.img1{
+    width: 150px;
+    height: auto;
+}
+#topnav{
+	background-color: #64c500;
+	text-align: center;
+}
+
+.menu{
+	list-style-type: none;
+	margin: 0;
+	padding: 10px;
+	font-size: 18px;
+	min-height: 38px;
+	line-height: 200%;
+}
+
+.menu > li{
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-right: 1px dashed #000000;
+}
+
+.menu > li:first-child{
+	border-left: 1px dashed #000000;
+}
+
+.menu a{
+	color: #fffbdb;
+	text-decoration: none;
+}
+
+.menu a:hover{
+	color: #000000;
+}
+.logowanie{
+    background-color: #8f8c7a;
+}
+.logowanie > form{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+button{
+    background-color: #64c500;
+    color: #000000;
+    height: 40px;
+    width: 200px;
+}
+button:hover{
+    background-color: #58af00;
+}
