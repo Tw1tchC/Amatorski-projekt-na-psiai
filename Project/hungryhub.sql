@@ -27,10 +27,10 @@ SET time_zone = "+00:00";
 -- Struktura tabeli dla tabeli `dane użytkowników`
 --
 
-CREATE TABLE `dane użytkowników` (
-  `nr użytkownika` int(11) NOT NULL,
+CREATE TABLE `dane uzytkownikow` (
+  `user id` int(11) NOT NULL,
   `login` varchar(20) NOT NULL,
-  `haslo` varchar(20) NOT NULL,
+  `password` varchar(20) NOT NULL,
   `adres` varchar(20) NOT NULL,
   `email` varchar(20) NOT NULL,
   `wiek` int(11) NOT NULL
@@ -44,7 +44,7 @@ CREATE TABLE `dane użytkowników` (
 
 CREATE TABLE `menu` (
   `nr restauracji` int(11) NOT NULL,
-  `dania główne` varchar(20) NOT NULL,
+  `dania glowne` varchar(20) NOT NULL,
   `przystawki` varchar(20) NOT NULL,
   `zupy` varchar(20) NOT NULL,
   `napoje` varchar(20) NOT NULL,
@@ -61,7 +61,7 @@ CREATE TABLE `restauracje` (
   `nr restauracji` int(11) NOT NULL,
   `nazwa restauracji` varchar(20) NOT NULL,
   `rodzaj kuchni` varchar(20) NOT NULL,
-  `dostępny sposób dostawy` varchar(20) NOT NULL
+  `dostepny sposob dostawy` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_polish_ci;
 
 -- --------------------------------------------------------
@@ -70,15 +70,15 @@ CREATE TABLE `restauracje` (
 -- Struktura tabeli dla tabeli `złożone zamówienia`
 --
 
-CREATE TABLE `złożone zamówienia` (
-  `nr zamówienia` int(11) NOT NULL,
+CREATE TABLE `zlozone zamowienia` (
+  `nr zamowienia` int(11) NOT NULL,
   `restauracja` varchar(20) NOT NULL,
-  `zamówione produkty` varchar(50) NOT NULL,
-  `imię` varchar(20) NOT NULL,
+  `zamowione produkty` varchar(50) NOT NULL,
+  `imie` varchar(20) NOT NULL,
   `nazwisko` varchar(20) NOT NULL,
   `adres` varchar(20) NOT NULL,
   `telefon` int(11) NOT NULL,
-  `sposób dostawy` varchar(20) NOT NULL,
+  `sposob dostawy` varchar(20) NOT NULL,
   `cena` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_polish_ci;
 
@@ -87,10 +87,10 @@ CREATE TABLE `złożone zamówienia` (
 --
 
 --
--- Indeksy dla tabeli `dane użytkowników`
+-- Indeksy dla tabeli `dane użytkownikow`
 --
-ALTER TABLE `dane użytkowników`
-  ADD PRIMARY KEY (`nr użytkownika`);
+ALTER TABLE `dane uzytkownikow`
+  ADD PRIMARY KEY (`user_id`);
 
 --
 -- Indeksy dla tabeli `menu`
@@ -106,20 +106,20 @@ ALTER TABLE `restauracje`
   ADD PRIMARY KEY (`nr restauracji`);
 
 --
--- Indeksy dla tabeli `złożone zamówienia`
+-- Indeksy dla tabeli `zlozone zamowienia`
 --
-ALTER TABLE `złożone zamówienia`
-  ADD PRIMARY KEY (`nr zamówienia`);
+ALTER TABLE `zlozone zamowienia`
+  ADD PRIMARY KEY (`nr zamowienia`);
 
 --
 -- AUTO_INCREMENT dla zrzuconych tabel
 --
 
 --
--- AUTO_INCREMENT dla tabeli `dane użytkowników`
+-- AUTO_INCREMENT dla tabeli `dane uzytkownikow`
 --
-ALTER TABLE `dane użytkowników`
-  MODIFY `nr użytkownika` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `dane uzytkownikow`
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT dla tabeli `menu`
@@ -136,8 +136,8 @@ ALTER TABLE `restauracje`
 --
 -- AUTO_INCREMENT dla tabeli `złożone zamówienia`
 --
-ALTER TABLE `złożone zamówienia`
-  MODIFY `nr zamówienia` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `zlozone zamowienia`
+  MODIFY `nr zamowienia` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
