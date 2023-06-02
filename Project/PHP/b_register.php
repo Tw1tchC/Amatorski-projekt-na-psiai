@@ -1,8 +1,8 @@
 <?php
 // Database connection parameters
 $servername = "localhost";
-$username = "your_username";
-$password = "your_password";
+$username = "";
+$password = "";
 $database = "hungryhub";
 
 // Create a new connection
