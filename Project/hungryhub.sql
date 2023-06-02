@@ -11,7 +11,6 @@ SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
-
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
@@ -27,14 +26,15 @@ SET time_zone = "+00:00";
 -- Struktura tabeli dla tabeli `dane użytkowników`
 --
 
-CREATE TABLE `dane uzytkownikow` (
-  `user id` int(11) NOT NULL,
+CREATE TABLE `dane_uzytkownikow` (
+  `user_id` int(11) NOT NULL AUTO_INCREMENT,
   `login` varchar(20) NOT NULL,
   `password` varchar(20) NOT NULL,
   `adres` varchar(20) NOT NULL,
   `email` varchar(20) NOT NULL,
-  `wiek` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_polish_ci;
+  `wiek` int(11) NOT NULL,
+  PRIMARY KEY (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_polish_ci;
 
 -- --------------------------------------------------------
 
@@ -43,13 +43,14 @@ CREATE TABLE `dane uzytkownikow` (
 --
 
 CREATE TABLE `menu` (
-  `nr restauracji` int(11) NOT NULL,
-  `dania glowne` varchar(20) NOT NULL,
+  `nr_restauracji` int(11) NOT NULL AUTO_INCREMENT,
+  `dania_glowne` varchar(20) NOT NULL,
   `przystawki` varchar(20) NOT NULL,
   `zupy` varchar(20) NOT NULL,
   `napoje` varchar(20) NOT NULL,
-  `cena` float NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_polish_ci;
+  `cena` float NOT NULL,
+  PRIMARY KEY (`nr_restauracji`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_polish_ci;
 
 -- --------------------------------------------------------
 
@@ -58,11 +59,12 @@ CREATE TABLE `menu` (
 --
 
 CREATE TABLE `restauracje` (
-  `nr restauracji` int(11) NOT NULL,
-  `nazwa restauracji` varchar(20) NOT NULL,
-  `rodzaj kuchni` varchar(20) NOT NULL,
-  `dostepny sposob dostawy` varchar(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_polish_ci;
+  `nr_restauracji` int(11) NOT NULL AUTO_INCREMENT,
+  `nazwa_restauracji` varchar(20) NOT NULL,
+  `rodzaj_kuchni` varchar(20) NOT NULL,
+  `dostepny_sposob_dostawy` varchar(20) NOT NULL,
+  PRIMARY KEY (`nr_restauracji`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_polish_ci;
 
 -- --------------------------------------------------------
 
@@ -70,74 +72,47 @@ CREATE TABLE `restauracje` (
 -- Struktura tabeli dla tabeli `złożone zamówienia`
 --
 
-CREATE TABLE `zlozone zamowienia` (
-  `nr zamowienia` int(11) NOT NULL,
+CREATE TABLE `zlozone_zamowienia` (
+  `nr_zamowienia` int(11) NOT NULL AUTO_INCREMENT,
   `restauracja` varchar(20) NOT NULL,
-  `zamowione produkty` varchar(50) NOT NULL,
+  `zamowione_produkty` varchar(50) NOT NULL,
   `imie` varchar(20) NOT NULL,
   `nazwisko` varchar(20) NOT NULL,
   `adres` varchar(20) NOT NULL,
   `telefon` int(11) NOT NULL,
-  `sposob dostawy` varchar(20) NOT NULL,
-  `cena` float NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_polish_ci;
+  `sposob_dostawy` varchar(20) NOT NULL,
+  `cena` float NOT NULL,
+  PRIMARY KEY (`nr_zamowienia`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_polish_ci;
 
 --
 -- Indeksy dla zrzutów tabel
 --
 
 --
--- Indeksy dla tabeli `dane użytkownikow`
+-- Indeksy dla tabeli `dane użytkowników`
 --
-ALTER TABLE `dane uzytkownikow`
-  ADD PRIMARY KEY (`user_id`);
+ALTER TABLE `dane_uzytkownikow`
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Indeksy dla tabeli `menu`
 --
 ALTER TABLE `menu`
-  ADD PRIMARY KEY (`nr restauracji`),
-  ADD KEY `nr restauracji` (`nr restauracji`);
+  MODIFY `nr_restauracji` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Indeksy dla tabeli `restauracje`
 --
 ALTER TABLE `restauracje`
-  ADD PRIMARY KEY (`nr restauracji`);
+  MODIFY `nr_restauracji` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- Indeksy dla tabeli `zlozone zamowienia`
+-- Indeksy dla tabeli `złożone zamówienia`
 --
-ALTER TABLE `zlozone zamowienia`
-  ADD PRIMARY KEY (`nr zamowienia`);
+ALTER TABLE `zlozone_zamowienia`
+  MODIFY `nr_zamowienia` int(11) NOT NULL AUTO_INCREMENT;
 
---
--- AUTO_INCREMENT dla zrzuconych tabel
---
-
---
--- AUTO_INCREMENT dla tabeli `dane uzytkownikow`
---
-ALTER TABLE `dane uzytkownikow`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT dla tabeli `menu`
---
-ALTER TABLE `menu`
-  MODIFY `nr restauracji` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT dla tabeli `restauracje`
---
-ALTER TABLE `restauracje`
-  MODIFY `nr restauracji` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT dla tabeli `złożone zamówienia`
---
-ALTER TABLE `zlozone zamowienia`
-  MODIFY `nr zamowienia` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
