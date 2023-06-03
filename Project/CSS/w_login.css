@@ -1,17 +1,19 @@
-html{
-    background-color: #fffbdb;
-    font-family: Verdana;
+html {
+	background-color: #fffbdb;
+	font-family: Verdana;
 }
-.img1{
-    width: 150px;
-    height: auto;
+
+.img1 {
+	width: 150px;
+	height: auto;
 }
-#topnav{
+
+#topnav {
 	background-color: #64c500;
 	text-align: center;
 }
 
-.menu{
+.menu {
 	list-style-type: none;
 	margin: 0;
 	padding: 10px;
@@ -20,46 +22,54 @@ html{
 	line-height: 200%;
 }
 
-.menu > li{
+.menu>li {
 	display: inline-block;
 	padding-left: 20px;
 	padding-right: 20px;
 	border-right: 1px dashed #000000;
 }
 
-.menu > li:first-child{
+.menu>li:first-child {
 	border-left: 1px dashed #000000;
 }
 
-.menu a{
+.menu a {
 	color: #fffbdb;
 	text-decoration: none;
 }
 
-.menu a:hover{
+.menu a:hover {
 	color: #000000;
 }
-.logowanie{
-    background-color: #8f8c7a;
+
+.logowanie {
+	background-color: #64c500;
+	text-align: center;
 }
-.logowanie > form{
-    text-align: center;
+
+.logowanie>form {
+	text-align: center;
 }
-h1{
-    text-align: center;
+
+h1 {
+	text-align: center;
 }
-h2{
-    text-align: center;
+
+h2 {
+	text-align: center;
 }
-button{
-    background-color: #64c500;
-    color: #000000;
-    height: 40px;
-    width: 200px;
+
+button {
+	text-align: center;
+	background-color: #64c500;
+	color: #000000;
+	height: 40px;
+	width: 200px;
 	border-radius: 25px;
 	border: none;
 	cursor: pointer;
 }
-button:hover{
-    background-color: #58af00;
+
+button:hover {
+	background-color: #58af00;
 }
