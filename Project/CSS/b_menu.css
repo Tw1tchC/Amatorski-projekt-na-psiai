@@ -1,0 +1,75 @@
+html {
+	background-color: #212121;
+	font-family: Verdana;
+	color: #fffbdb;
+}
+
+.img1 {
+	width: 150px;
+	height: auto;
+}
+
+#topnav {
+	background-color: #64c500;
+	text-align: center;
+}
+
+.menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 10px;
+	font-size: 18px;
+	min-height: 38px;
+	line-height: 200%;
+}
+
+.menu>li {
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-right: 1px dashed #212121;
+}
+
+.menu>li:first-child {
+	border-left: 1px dashed #212121;
+}
+
+.menu a {
+	color: #fffbdb;
+	text-decoration: none;
+}
+
+.menu a:hover {
+	color: #212121;
+}
+
+.logowanie {
+	background-color: #313131;
+	color: #fffbdb;
+}
+
+.logowanie>form {
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+button {
+	background-color: #64c500;
+	color: #212121;
+	height: 40px;
+	width: 200px;
+	border-radius: 25px;
+	border: none;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #58af00;
+}
