@@ -10,8 +10,6 @@ Użytkownicy będą mogli bezpiecznie rejestrować się dostając informację na
 
 Katalog ze szczegółami, takimi jak nazwa jedzenia, restauracja z której jest te jedzenie, cena i informacje o dostawie.
 
-Menu i zamawianie:
-
 3.Jedzenie, ceny i opisy.
 
 Umożliwimy użytkownikom dodawanie produktów do koszyka, określanie opcji dostawy i składanie zamówień.
