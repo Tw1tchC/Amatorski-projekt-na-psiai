@@ -22,5 +22,5 @@ Działający koszyk, w której użytkownicy mogą przeglądać wybrane pozycje k
 
 Po złożonym zamówieniu użytkownik dostanie nr zamówienia, szczegóły dotyczące statusu płatności i realizacji zamówienia, adres wysyłkowy, forma wysyłki oraz forma płatności.
 
-W projekcie były użyte następujące języki programowania:HTML, CSS, PHP, SQL
+W projekcie były użyte następujące języki programowania:HTML, CSS, PHP, SQL, JavaScript.
 Wraz z rozszerzeniem Ecwid w tym rozszerzeniu jest również baza danych klientów zajrestrowanych na stronie. (zachęcam do założenia konta na stronie.)
