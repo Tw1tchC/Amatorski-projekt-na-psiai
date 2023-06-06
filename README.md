@@ -21,3 +21,6 @@ Działający koszyk, w której użytkownicy mogą przeglądać wybrane pozycje k
 5.Potwierdzenie na email wraz z fakturą i opisem zamówienia:
 
 Po złożonym zamówieniu użytkownik dostanie nr zamówienia, szczegóły dotyczące statusu płatności i realizacji zamówienia, adres wysyłkowy, forma wysyłki oraz forma płatności.
+
+W projekcie były użyte następujące języki programowania:HTML, CSS, PHP, SQL
+Wraz z rozszerzeniem Ecwid.
