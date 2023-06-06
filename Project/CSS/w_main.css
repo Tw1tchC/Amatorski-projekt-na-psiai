@@ -5,6 +5,7 @@ html{
 .img1{
     width: 150px;
     height: auto;
+    float: left;
 }
 .img2{
     width: 75px;
@@ -22,6 +23,7 @@ html{
     width: 90px;
     height: auto;
     padding: 5px;
+    float: left;
 }
 #topnav{
 	background-color: #64c500;
