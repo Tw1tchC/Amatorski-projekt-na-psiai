@@ -58,7 +58,7 @@ CREATE TABLE `menu` (
 -- Struktura tabeli dla tabeli `restauracje`
 --
 
-CREATE TABLE `restauracje` (
+CREATE TABLE `restaurants` (
   `nr_restauracji` int(11) NOT NULL AUTO_INCREMENT,
   `nazwa_restauracji` varchar(20) NOT NULL,
   `rodzaj_kuchni` varchar(20) NOT NULL,
@@ -104,7 +104,7 @@ ALTER TABLE `menu`
 --
 -- Indeksy dla tabeli `restauracje`
 --
-ALTER TABLE `restauracje`
+ALTER TABLE `restaurants`
   MODIFY `nr_restauracji` int(11) NOT NULL AUTO_INCREMENT;
 
 --
