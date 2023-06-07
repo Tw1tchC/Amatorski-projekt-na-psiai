@@ -16,10 +16,10 @@
         </div>
         <nav id="topnav">
             <ul class="menu">
-                <li><a href="../PHP/w_register.php">Rejestracja</a></li>
-                <li><a href="../PHP/w_login.php">Logowanie</a></li>
-                <li><a href="">Lista dostępnych restauracji oraz sklepów</a></li>
-                <li><a href="">Koszyk i kasa</a></li>
+                <li><a href="w_register.php">Rejestracja</a></li>
+                <li><a href="w_login.php">Logowanie</a></li>
+                <li><a href="w_listarestauracji.php">Lista dostępnych restauracji oraz sklepów</a></li>
+                <li><a href="w_menu.php">Sklep</a></li>
             </ul>
         </nav>
     </header>
