@@ -19,7 +19,7 @@
                 <li><a href="b_register.php">Rejestracja</a></li>
                 <li><a href="b_login.php">Logowanie</a></li>
                 <li><a href="b_listarestauracji.php">Lista dostępnych restauracji oraz sklepów</a></li>
-                <li><a href="">Koszyk i kasa</a></li>
+                <li><a href="b_menu.php">Sklep</a></li>
             </ul>
         </nav>
     </header>
