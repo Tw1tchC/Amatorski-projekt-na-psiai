@@ -1,55 +1,31 @@
-using System;
-using System.Collections.Generic;
+def merge_sort(arr):
+    if len(arr) > 1:
+        mid = len(arr)//2
+        left = arr[:mid]
+        right = arr[mid:]
 
-class Program
-{
-    static List<int> SitoEratostenesa(int n)
-    {
-        bool[] A = new bool[n + 1];
+        merge_sort(left)
+        merge_sort(right)
 
-        // krok 1: ustaw wszystkie wartości na true
-        for (int i = 2; i <= n; i++)
-        {
-            A[i] = true;
-        }
+        i = j = k = 0
 
-        // krok 2: wykreślanie wielokrotności
-        for (int p = 2; p * p <= n; p++)
-        {
-            if (A[p])
-            {
-                for (int i = p * p; i <= n; i += p)
-                {
-                    A[i] = false;
-                }
-            }
-        }
+        # scalanie
+        while i < len(left) and j < len(right):
+            if left[i] < right[j]:
+                arr[k] = left[i]
+                i += 1
+            else:
+                arr[k] = right[j]
+                j += 1
+            k += 1
 
-        // krok 3: zbieranie liczb pierwszych
-        List<int> primes = new List<int>();
-        for (int i = 2; i <= n; i++)
-        {
-            if (A[i])
-                primes.Add(i);
-        }
+        # reszta elementów
+        while i < len(left):
+            arr[k] = left[i]
+            i += 1
+            k += 1
 
-        return primes;
-    }
-
-    static void Main()
-    {
-        Console.Write("Podaj n (2-100): ");
-        int n;
-        
-        if (int.TryParse(Console.ReadLine(), out n) && n >= 2 && n <= 100)
-        {
-            List<int> liczbyPierwsze = SitoEratostenesa(n);
-            Console.WriteLine("Liczby pierwsze do " + n + ":");
-            Console.WriteLine(string.Join(", ", liczbyPierwsze));
-        }
-        else
-        {
-            Console.WriteLine("Błąd: n musi być w zakresie 2-100");
-        }
-    }
-}
+        while j < len(right):
+            arr[k] = right[j]
+            j += 1
+            k += 1
